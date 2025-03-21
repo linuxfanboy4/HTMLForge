@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLForge IDE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>HTMLForge</h1>
+                <p>Modern HTML, CSS, JS IDE</p>
+            </div>
+            <div class="toolbar">
+                <button id="run"><i class="fas fa-play"></i> Run</button>
+                <button id="upload"><i class="fas fa-upload"></i> Upload</button>
+                <button id="download"><i class="fas fa-download"></i> Download</button>
+                <button id="runBlank"><i class="fas fa-window-restore"></i> Run in Blank</button>
+            </div>
+        </header>
+        <div class="editor-container">
+            <div id="editor"></div>
+        </div>
+        <iframe id="output" class="output-frame"></iframe>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.32.1/min/vs/loader.js"></script>
+    <script src="/js/socket.js"></script>
+    <script src="/js/editor.js"></script>
+</body>
+                                        </html>
